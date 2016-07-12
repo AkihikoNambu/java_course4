@@ -1,8 +1,7 @@
 class Car {
   private String name;
-  private String color;
   private int x = 0;
-  private int fuel = 100;
+  protected int fuel = 100;
   private static int count = 0;
 
   Car(String name) {
@@ -25,7 +24,6 @@ class Car {
     System.out.println("名前: " + this.name);
     System.out.println("現在位置: " + this.x + "km");
     System.out.println("ガソリン量: " + this.fuel + "リットル");
-    System.out.println();
   }
 
   public void run(int distance) {
@@ -36,13 +34,11 @@ class Car {
       this.fuel -= distance;
       System.out.println(distance + "km走りました");
     }
-    this.printData();
   }
 
   public void charge(int fuel) {
     this.fuel += fuel;
     System.out.println(fuel + "リットル給油しました");
-    this.printData();
   }
 
   public static void printCount() {
