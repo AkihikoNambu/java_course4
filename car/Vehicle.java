@@ -1,10 +1,8 @@
 abstract class Vehicle {
   private String name;
   protected int x = 0;
-  private static int count = 0;
 
   Vehicle(String name) {
-    count++;
     this.name = name;
   }
 
@@ -19,8 +17,4 @@ abstract class Vehicle {
   }
 
   abstract public void run(int distance);
-
-  public static void printCount() {
-    System.out.println("合計で" + count + "台の車があります。");
-  }
 }

@@ -10,8 +10,8 @@ class Main {
     car.printData();
 
     Bicycle bicycle = new Bicycle("自転車");
-    bicycle.printData;
+    bicycle.printData();
     bicycle.run(30);
-    bicycle.printData;
+    bicycle.printData();
   }
 }
