@@ -9,7 +9,7 @@ class Car extends Vehicle {
     this.fuel = fuel;
   }
 
-  public static void printData() {
+  public void printData() {
     super.printData();
     System.out.println("ガソリン量: " + this.fuel + " (L)");
   }
