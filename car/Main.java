@@ -1,6 +1,6 @@
 class Main {
   public static void main(String[] args) {
-    Taxi car = new Taxi("プリウス");
+    Car car = new Car("プリウス", 100);
     car.printData();
     car.run(60);
     car.printData();
