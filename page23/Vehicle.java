@@ -1,7 +1,7 @@
 abstract class Vehicle {
   private String name;
   protected int x;
-  Person owner;
+  private Person owner;
 
   Vehicle(String name) {
     this.name = name;
@@ -11,6 +11,10 @@ abstract class Vehicle {
   Vehicle(String name, Person owner) {
     this(name);
     this.owner = owner;
+  }
+
+  public Person getOwner() {
+    return this.owner;
   }
 
   public void printData() {

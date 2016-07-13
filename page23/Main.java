@@ -7,6 +7,6 @@ class Main {
     car.printData();
 
     System.out.println("【所有者の情報】");
-    car.owner.printData();
+    car.getOwner().printData();
   }
 }
