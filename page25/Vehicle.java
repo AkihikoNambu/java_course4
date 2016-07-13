@@ -13,9 +13,12 @@ abstract class Vehicle {
     this.owner = owner;
   }
 
-  // ゲッター次のページのほうがいいかも？
   public Person getOwner() {
     return this.owner;
+  }
+
+  public void setOwner(Person owner) {
+    this.owner = owner;
   }
 
   public void printData() {
