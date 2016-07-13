@@ -56,6 +56,10 @@ class Person {
     return this.weight / this.height / this.height;
   }
 
+  public void buy(Car car) {
+    car.setOwner(this);
+  }
+
   public static void printCount() {
     System.out.println("合計で" + counter + "人のPersonがいます。");
   }
