@@ -20,5 +20,6 @@ class Main {
     System.out.print("体重(kg)：");
     double weight = scanner.nextDouble();
 
+    Person.printData(firstName, lastName, age, height, weight);
   }
 }
