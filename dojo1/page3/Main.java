@@ -12,6 +12,6 @@ class Main {
 
     String name = firstName + " " + lastName;
 
-    System.out.println("私の名前は" + name + "です");
+    System.out.println("名前は" + name + "です");
   }
 }

@@ -14,7 +14,7 @@ class Main {
     System.out.print("年齢：");
     int age = scanner.nextInt();
 
-    System.out.println("私の名前は" + name + "です");
-    System.out.println("私の年齢は" + age + "歳です");
+    System.out.println("名前は" + name + "です");
+    System.out.println("年齢は" + age + "歳です");
   }
 }
