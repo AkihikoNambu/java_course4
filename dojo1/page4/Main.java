@@ -9,12 +9,11 @@ class Main {
 
     System.out.print("名字：");
     String lastName = scanner.next();
-    String name = firstName + " " + lastName;
 
     System.out.print("年齢：");
     int age = scanner.nextInt();
 
-    System.out.println("名前は" + name + "です");
+    System.out.println("名前は" + Person.fullName(firstName, lastName) + "です");
     System.out.println("年齢は" + age + "歳です");
   }
 }
