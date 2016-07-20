@@ -22,6 +22,10 @@ class Main {
       System.out.print("年齢：");
       int age = scanner.nextInt();
 
+      if (age > maxAge) {
+        maxAge = age;
+      }
+
       System.out.print("身長(m)：");
       double height = scanner.nextDouble();
 
@@ -29,10 +33,6 @@ class Main {
       double weight = scanner.nextDouble();
 
       Person.printData(firstName, lastName, age, height, weight);
-
-      if (age > maxAge) {
-        maxAge = age;
-      }
     }
 
     System.out.println("最高齢は" + maxAge + "歳です");
