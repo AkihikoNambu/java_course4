@@ -9,9 +9,14 @@ class Person {
     }
     System.out.println("身長は" + height + "mです");
     System.out.println("体重は" + weight + "kgです");
+    System.out.println("BMIは" + Math.round(bmi(height, weight)) + "です");
   }
 
   public static String fullName(String firstName, String lastName) {
     return firstName + " " + lastName;
+  }
+
+  public static double bmi(double height, double weight) {
+    return weight / height / height;
   }
 }
