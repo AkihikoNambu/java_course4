@@ -1,3 +1,5 @@
+// 独自のフィールドとメソッドを追加
+
 class Car extends Vehicle {
   private int fuel;
 
@@ -5,12 +7,8 @@ class Car extends Vehicle {
     return this.fuel;
   }
 
+  // setFuelが必要か？
   public void setFuel(int fuel) {
     this.fuel = fuel;
-  }
-
-  public void printData() {
-    System.out.println("現在位置: " + this.x + "km");
-    System.out.println("ガソリン量: " + this.fuel + " (L)");
   }
 }

@@ -4,5 +4,6 @@ class Main {
     person1.printData();
     Person person2 = new Person("John", "Christopher", "Smith", 65, 1.75, 80.0);
     person2.printData();
+    Person.printCount();
   }
 }

@@ -1,3 +1,5 @@
+// printDataをオーバーライド
+
 class Car extends Vehicle {
   private int fuel;
 
@@ -10,7 +12,7 @@ class Car extends Vehicle {
   }
 
   public void printData() {
-    super.printData();
-    System.out.println("ガソリン量: " + this.fuel + " (L)");
+    System.out.println("現在位置: " + this.getX() + "km");
+    System.out.println("ガソリン量: " + this.getFuel() + "(L)");
   }
 }

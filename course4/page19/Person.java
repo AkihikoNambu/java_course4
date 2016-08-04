@@ -1,11 +1,14 @@
 class Person {
-  private static int counter = 0;
-  private String firstName, middleName, lastName;
+  private static int count = 0;
+  private String firstName;
+  private String middleName;
+  private String lastName;
   private int age;
-  private double height, weight;
+  private double height;
+  private double weight;
 
   Person(String firstName, String lastName, int age, double height, double weight) {
-    counter++;
+    count++;
     System.out.println(counter + "人目のPersonです");
     this.firstName = firstName;
     this.lastName = lastName;
@@ -19,12 +22,12 @@ class Person {
     this.middleName = middleName;
   }
 
-  // MiddleNameフィールドのゲッターを定義してください
+  // middleNameフィールドのゲッターを定義してください
   public String getMiddleName() {
     return this.middleName;
   }
 
-  // MiddleNameフィールドのセッターを定義してください
+  // middleNameフィールドのセッターを定義してください
   public void setMiddleName(String middleName) {
     this.middleName = middleName;
   }
@@ -48,6 +51,6 @@ class Person {
   }
 
   public static void printCount() {
-    System.out.println("合計で" + counter + "人のPersonがいます。");
+    System.out.println("合計" + count + "人です");
   }
 }

@@ -1,6 +1,6 @@
 class Main {
   public static void main(String[] args) {
-    Bicycle bicycle = new Bicycle();
-    Car car = new Car();
+    Vehicle vehicle = new Vehicle();
+    vehicle.printData();
   }
 }

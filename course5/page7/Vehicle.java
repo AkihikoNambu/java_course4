@@ -1,14 +1,20 @@
 class Vehicle {
+  private int x = 0;
   private String name;
-  protected int x;
 
   Vehicle(String name) {
     this.name = name;
-    this.x = 0;
   }
 
   public void printData() {
-    System.out.println("名前: " + this.name);
     System.out.println("現在位置: " + this.x + "km");
+  }
+
+  public int getX() {
+    return this.x;
+  }
+
+  public String getName() {
+    return this.name;
   }
 }

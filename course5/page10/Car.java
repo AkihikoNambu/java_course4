@@ -1,14 +1,8 @@
 class Car extends Vehicle {
-  private int fuel;
+  private int fuel = 100;
 
   Car(String name) {
     super(name);
-    this.fuel = 100;
-  }
-
-  Car(String name, Person owner) {
-    super(name, owner);
-    this.fuel = 100;
   }
 
   public int getFuel() {

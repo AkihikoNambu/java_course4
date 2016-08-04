@@ -1,12 +1,13 @@
 class Person {
-  private static int counter = 0;
-  private String firstName, middleName, lastName;
+  private static int count = 0;
+  private String firstName;
+  private String middleName;
+  private String lastName;
   private int age;
   private double height, weight;
 
   Person(String firstName, String lastName, int age, double height, double weight) {
-    counter++;
-    System.out.println(counter + "人目のPersonです");
+    count++;
     this.firstName = firstName;
     this.lastName = lastName;
     this.age = age;
@@ -38,6 +39,6 @@ class Person {
   }
 
   public static void printCount() {
-    System.out.println("合計で" + counter + "人のPersonがいます。");
+    System.out.println("合計" + count + "人です");
   }
 }

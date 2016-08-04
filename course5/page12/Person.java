@@ -1,4 +1,4 @@
-class Person {
+public class Person {
   private static int counter = 0;
 
   private String firstName;
@@ -54,10 +54,6 @@ class Person {
 
   public double bmi() {
     return this.weight / this.height / this.height;
-  }
-
-  public void buy(Car car) {
-    car.setOwner(this);
   }
 
   public static void printCount() {

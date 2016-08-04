@@ -1,9 +1,9 @@
 class Car extends Vehicle {
   private int fuel;
 
-  Car(String name) {
-    super(name);
-    this.fuel = 100;
+  Car() {
+    super();
+    System.out.println("Carクラスのコンストラクタです");
   }
 
   public int getFuel() {

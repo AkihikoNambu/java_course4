@@ -1,12 +1,13 @@
 class Person {
-  public static int counter = 0;
-  public String firstName, middleName, lastName;
+  public static int count = 0;
+  public String firstName;
+  public String middleName;
+  public String lastName;
   public int age;
   public double height, weight;
 
   Person(String firstName, String lastName, int age, double height, double weight) {
-    counter++;
-    System.out.println(counter + "人目のPersonです");
+    count++;
     this.firstName = firstName;
     this.lastName = lastName;
     this.age = age;
@@ -20,6 +21,7 @@ class Person {
   }
 
   public String fullName() {
+    // if文を用いて、middleNameがない場合とmiddleNameがある場合で場合わけをしてください
     if (this.middleName == null) {
       return this.firstName + " " + this.lastName;
     } else {
@@ -40,6 +42,6 @@ class Person {
   }
 
   public static void printCount() {
-    System.out.println("合計で" + counter + "人のPersonがいます。");
+    System.out.println("合計" + count + "人です");
   }
 }
